@@ -667,6 +667,9 @@ nav {
     display: flex;
     align-items: center;
     gap: 8px;
+    pointer-events: auto;
+    position: relative;
+    z-index: 10;
 }
 
 .project-links a:hover {
@@ -715,7 +718,7 @@ nav {
     background: linear-gradient(transparent, rgba(10, 25, 47, 0.9));
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .project-card.floating-tile:hover::after {
@@ -744,7 +747,7 @@ nav {
     background: radial-gradient(circle, rgba(76, 201, 240, 0.05) 1px, transparent 1px);
     background-size: 50px 50px;
     animation: backgroundScroll 30s linear infinite;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 @keyframes backgroundScroll {
